@@ -14,7 +14,7 @@ pipeline {
         remote.password = 'qfwHpjFLOR2tmkkCQyAK'
         remote.allowAnyHosts = true
          sshCommand remote: remote, command: 'ls && test -d "/home/altisss_binh/test-jenkins" && echo "test-jenkins existed" || git clone https://github.com/hanguyenbinh/test-jenkins.git'
-            sshCommand remote: remote, command: "ls -lrt && cd test-jenkins && npm install && node index.js"
+            sshCommand remote: remote, command: "ls -lrt && cd test-jenkins && npm install && pm2 stop 0 && pm2 start index.js"
             }
             }
             
