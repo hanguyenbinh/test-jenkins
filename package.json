@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hanguyenbinh/test-jenkins/issues"
   },
-  "homepage": "https://github.com/hanguyenbinh/test-jenkins#readme"
+  "homepage": "https://github.com/hanguyenbinh/test-jenkins#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
